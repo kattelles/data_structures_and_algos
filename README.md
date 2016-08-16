@@ -120,7 +120,18 @@ Bubble sort is an in-place sort: it doesn't need to make copies of the array. It
 
 ## Selection Sort
 
+Selection sort is a comparison sort that works as follows:
+
+1. find the minimum value in the list
+2. swap it with the value in the first position
+3. sort the remainder of the list (excluding the first value)
+
+Selection sort is very slow on large lists. O(n**2)
+
 ## Insertion Sort
+
+Insertion sort is also O(n**2) but it works in a slightly different way. It always maintains a sorted sublist in the lower positions of the list. Each new item is then “inserted” back into the previous sublist such that the sorted sublist is one item larger.
+
 
 ## Topological Search
 
@@ -129,3 +140,7 @@ Bubble sort is an in-place sort: it doesn't need to make copies of the array. It
 ## Breadth First Search
 
 ## Binary Search
+
+# Common Interview Questions
+
+## Make Change
