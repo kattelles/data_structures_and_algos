@@ -1,6 +1,6 @@
 # Data Structures
 
-## Static Array
+## [Static Array](data_structures/static_array.rb)
 
 Very basic implementation of a static array.
 
@@ -62,16 +62,20 @@ linked list = each link holds a pointer to previous and next.
 
 ## Hash Map
 
+
 ## LRU Cache
 
 ## Binary Search Tree
 
 A binary tree is a data structure composed of nodes. Each node can have 0-2
-children.
+children. A BST is a type of binary tree where the following rule applies: lesser or equal nodes to the left of their parents, larger nodes to the right.
 
-A BST is a type of binary tree where the following rule applies: the left node
-is always less that it's parent and the right node is always greater than it's
-parent.
+| API             | BigO
+| --------------- |------------- |
+| insert(val)     | O(log n)     |
+| include?        | O(log n)     |
+| delete!         | O(log n)     |
+| find!           | O(log n)     |
 
 ## Heap (Heap Sort)
 
