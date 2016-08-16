@@ -24,7 +24,8 @@ class RingBuffer
   def pop
     raise "index out of bounds" if (length == 0)
 
-    val, self[length - 1] = self[length - 1], nil
+    val = self[length - 1]
+    self[length - 1] = nil
     self.length -= 1
 
     val
