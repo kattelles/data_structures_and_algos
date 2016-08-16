@@ -4,7 +4,6 @@ Very basic implementation of a static array.
 
 | API           | BigO (worst case)
 | --------------|:---------------:|
-|               |                 |
 | [](idx)       | O(1)            |
 | []=(idx, val) | O(1)            |
 
@@ -15,7 +14,6 @@ Built upon a static array, a Dynamic Array will resize! when necessary.
 
 | API           | BigO (worst case)
 | --------------|:---------------:|
-|               |                 |
 | [](idx)       | O(1)            |
 | []=(idx, val) | O(1)            |
 | pop           | O(1)            |
@@ -30,7 +28,6 @@ The Ring Buffer is an optimization of the Dynamic Array.
 
 | API           | BigO (worst case)
 | --------------|:---------------:|
-|               |                 |
 | [](idx)       | O(1)            |
 | []=(idx, val) | O(1)            |
 | pop           | O(1)            |
