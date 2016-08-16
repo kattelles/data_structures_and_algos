@@ -1,3 +1,5 @@
+# Data Structures
+
 ## Static Array
 
 Very basic implementation of a static array.
@@ -24,8 +26,9 @@ Built upon a static array, a Dynamic Array will resize! when necessary.
 
 ## Ring Buffer
 
-The Ring Buffer is an optimization of the Dynamic Array. By keeping track of a start_idx
-an using modulus to find the index, the RB allows for shifting and unshifting in constant time.
+The Ring Buffer is an optimization of the Dynamic Array. By keeping track of a
+start_idx and using modulus to find the index, the RB allows for shifting and
+unshifting in constant time.
 
 | API           | BigO
 | --------------|--------------|
@@ -39,7 +42,11 @@ an using modulus to find the index, the RB allows for shifting and unshifting in
 
 ## Linked-List
 
-A linked list is a data structure that consists of a series of links. Each link holds a value and a pointer to the next link (or nil). Given a pointer to the first (or head) link, you can access any arbitrary link by traversing the links in order.
+A linked list is a data structure that consists of a series of links. Each link
+holds a value and a pointer to the next link (or nil). Given a pointer to the
+first (or head) link, you can access any arbitrary link by traversing the links
+in order. Singly linked list = each link only holds a pointer for next. Doubly
+linked list = each link holds a pointer to previous and next.
 
 | API             | BigO
 | ----------------|--------------|
@@ -57,19 +64,59 @@ A linked list is a data structure that consists of a series of links. Each link 
 
 ## LRU Cache
 
+## Binary Search Tree
+
+A binary tree is a data structure composed of nodes. Each node can have 0-2
+children.
+
+A BST is a type of binary tree where the following rule applies: the left node
+is always less that it's parent and the right node is always greater than it's
+parent.
+
 ## Heap (Heap Sort)
 
-## Graphs
+A heap is a tree that is either a min heap or a max heap down. In a max heap,
+the parent nodes are always larger than those of the the children and vice
+versa for min heap.
 
-## Dijkstra
+*heap property*  If A is a parent node of B then the value of node A
+is ordered with respect to the value of node B and the same ordering applies
+across the heap.
 
-## Binary Tree
+| API             | BigO
+| ----------------|--------------|
+| insert          | O(n)         |
+| pop_min         | O(1)         |
+| min             | O(1)         |
+| heapify_up!     | O(1)         |
+| heapify_down!   | O(1)         |
+
+Heap sort takes an unordered array and turns it into a heap. It then pops off
+the tree and returns the values to an array, this time in order.
+
+## Graph (Dijkstra's Algorithm)
+
+# Sorts and Searches
 
 ## Quick Sort
 
+In the best case, quicksort always chooses a pivot that evenly divides the array. At each level, quicksort goes through the entire array to partition the array, which takes O(n) time. So the best case, like mergesort, is O(nlogn).
+
+However, there is the possibility that quicksort will choose a poor pivot; the worst case is if every element is larger (or smaller) than the pivot. Then one side has n-1 elements and the other has zero. This degenerates to an O(n**2) time complexity.
+
+QS can be done either in place or not which will change space complexity.
+
 ## Merge Sort
 
+Because merge sort breaks the array in half each time, it can only have a recursion depth of at most log_2(n) calls. At each recursion depth level, n elements are merged. Therefore, the time complexity is nlog(n).
+
+This time complexity is both the best and worst case; no matter the starting order of the array, log_2(n) recursions are needed, and all the elements need to be merged at each level.
+
 ## Bubble Sort
+
+The best case for bubble sort is a sorted array (time O(n)). The worst case is a reversed array (O(n**2)).
+
+Bubble sort is an in-place sort: it doesn't need to make copies of the array. It takes O(1) memory; it only needs to store the sorted and i variables.
 
 ## Selection Sort
 
