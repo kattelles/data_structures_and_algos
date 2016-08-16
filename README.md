@@ -5,7 +5,7 @@
 Very basic implementation of a static array.
 
 | API           | BigO
-| --------------|--------------|
+| ------------- |------------- |
 | [](idx)       | O(1)         |
 | []=(idx, val) | O(1)         |
 
@@ -15,7 +15,7 @@ Very basic implementation of a static array.
 Built upon a static array, a Dynamic Array will resize! when necessary.
 
 | API           | BigO
-| --------------|--------------|
+| ------------- |------------- |
 | [](idx)       | O(1)         |
 | []=(idx, val) | O(1)         |
 | pop           | O(1)         |
@@ -30,15 +30,15 @@ The Ring Buffer is an optimization of the Dynamic Array. By keeping track of a
 start_idx and using modulus to find the index, the RB allows for shifting and
 unshifting in constant time.
 
-| API           | BigO
-| --------------|--------------|
-| [](idx)       | O(1)         |
-| []=(idx, val) | O(1)         |
-| pop           | O(1)         |
-| push(val)     | O(1)         |
-| shift         | O(1)         |
-| unshift(val)  | O(1)         |
-| resize!       | O(n)         |
+| API             | BigO
+| --------------- |------------- |
+| [](idx)         | O(1)         |
+| []=(idx, val)   | O(1)         |
+| pop             | O(1)         |
+| push(val)       | O(1)         |
+| shift           | O(1)         |
+| unshift(val)    | O(1)         |
+| resize!         | O(n)         |
 
 ## Linked-List
 
@@ -49,7 +49,7 @@ in order. Singly linked list = each link only holds a pointer for next. Doubly
 linked list = each link holds a pointer to previous and next.
 
 | API             | BigO
-| ----------------|--------------|
+| --------------- |------------- |
 | [](idx)         | O(n)         |
 | first           | O(1)         |
 | last            | O(1)         |
@@ -84,7 +84,7 @@ is ordered with respect to the value of node B and the same ordering applies
 across the heap.
 
 | API             | BigO
-| ----------------|--------------|
+| --------------- |------------- |
 | insert          | O(n)         |
 | pop_min         | O(1)         |
 | min             | O(1)         |
