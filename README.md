@@ -3,7 +3,7 @@
 Very basic implementation of a static array.
 
 | API           | BigO
-| --------------|:------------:|
+| --------------|--------------|
 | [](idx)       | O(1)         |
 | []=(idx, val) | O(1)         |
 
@@ -13,7 +13,7 @@ Very basic implementation of a static array.
 Built upon a static array, a Dynamic Array will resize! when necessary.
 
 | API           | BigO
-| --------------|:------------:|
+| --------------|--------------|
 | [](idx)       | O(1)         |
 | []=(idx, val) | O(1)         |
 | pop           | O(1)         |
@@ -28,7 +28,7 @@ The Ring Buffer is an optimization of the Dynamic Array. By keeping track of a s
 an using modulus to find the index, the RB allows for shifting and unshifting in constant time.
 
 | API           | BigO
-| --------------|:------------:|
+| --------------|--------------|
 | [](idx)       | O(1)         |
 | []=(idx, val) | O(1)         |
 | pop           | O(1)         |
@@ -42,7 +42,7 @@ an using modulus to find the index, the RB allows for shifting and unshifting in
 A linked list is a data structure that consists of a series of links. Each link holds a value and a pointer to the next link (or nil). Given a pointer to the first (or head) link, you can access any arbitrary link by traversing the links in order.
 
 | API             | BigO
-| ----------------|:------------:|
+| ----------------|--------------|
 | [](idx)         | O(n)         |
 | first           | O(1)         |
 | last            | O(1)         |
