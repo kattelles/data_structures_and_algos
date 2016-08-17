@@ -103,6 +103,8 @@ the tree and returns the values to an array, this time in order.
 
 ## [Graph (Dijkstra's Algorithm)](data_structures/graph.rb)
 
+coming soon...
+
 # Sorts and Searches
 
 ## [Quick Sort](sorts_and_searches/quick_sort.rb)
@@ -153,10 +155,22 @@ coming soon...
 
 ## [Binary Search](sorts_and_searches/binary_search.rb)
 
-coming soon...
+The binary search algorithm begins by comparing the target value to the value of the middle element of the sorted array. If the target value is equal to the middle element's value, then the position is returned and the search is finished. If the target value is less than the middle element's value, then the search continues on the lower half of the array; or if the target value is greater than the middle element's value, then the search continues on the upper half of the array. This process continues, eliminating half of the elements, and comparing the target value to the value of the middle element of the remaining elements - until the target value is either found (and its associated element position is returned), or until the entire array has been searched (and "not found" is returned).
+
+Binary Search only works on sorted arrays.
 
 # Common Interview Questions
 
-## [Make Change](common_interview_questions/make_change.rb)
+## [Make Change (Dynamic Programming)](common_interview_questions/make_change.rb)
 
-coming soon...
+*Dynamic programming* is when you use past knowledge to make solving a future problem easier. A DP is an algorithmic technique which is usually based on a recurrent formula and one (or some) starting states. A sub-solution of the problem is constructed from previously found ones.
+
+Make Change: write a function that takes in an amount and a set of coins.  Return the minimum number of coins needed to make change for the given amount.  You may assume you have an unlimited supply of each type of coin. If it's not possible to make change for a given amount, return nil.  You may assume that the coin array is sorted and in ascending order.
+
+## [Stair Climb](common_interview_questions/stair_climb.rb)
+
+Stair Climber: a frog climbs a set of stairs.  It can jump 1 step, 2 steps, or 3 steps at a time. Write a function that returns all the possible ways the frog can get from the bottom step to step n. For example, with 3 steps, your function should return [[1, 1, 1], [1, 2], [2, 1], [3]].
+
+## [Knapsack Problem](common_interview_questions/knapsack_problem.rb)
+
+Knapsack Problem: write a function that takes in an array of weights, an array of values, and a weight capacity and returns the maximum value possible given the weight constraint. For example: if weights = [1, 2, 3], values = [10, 4, 8], and capacity = 3, your function should return 10 + 4 = 14, as the best possible set of items to include are items 0 and 1, whose values are 10 and 4 respectively.  Duplicates are not allowed -- that is, you can only include a particular item once.
